@@ -1,12 +1,22 @@
-# Entrega del Proyecto
+# Proyecto DEMO de portfolio de Helldivers
 
-## Cómo Ejecutar el Proyecto
+#Esta es una web de ejemplo de uso de Angular con temática del videojuego Helldivers 2.
+Ha sido realizada para ejemplificar: 
+- Diseño web 
+- Uso de API (En el apartado de los planetas, se reciben de la API de la web https://helldivers-2.github.io/api/#/ ),
+- Mobile first como para facilitar la correcta visualización en móviles,
+- Un sistema de login sencillo, 
+- Uso de multimedia, 
+- Persistencia de datos a través de sesión.
 
-1. Haz doble clic en el archivo `hfs.exe` para iniciar el servidor HTTP (HFS).
-2. Abre tu navegador y ve a `http://localhost:8080`. (O HAZ CLICK EN EL LINK A FRONT END DE HFS)
-3. La aplicación Angular debería cargarse automáticamente.
 
-Si la aplicación no se carga, asegúrate de que `index.html` esté configurado como archivo predeterminado en HFS:
-   - ejecutando hfs dentro de shared files debe haber una opción de serve as web page in index.html is found, actívala si no carga
-   
-   - si no detecta la ruta, aunque no debería porque para eso lo empaco con este server web, se puede seleccionar la carpeta "DanielMenaWebAngular" en donde dice disk source y activar la opción mencionada antes, gracias por leer 
+# Helldivers Portfolio DEMO Project
+
+#This is a sample website demonstrating the use of Angular, themed after the video game Helldivers 2.
+It was created to demonstrate:
+- Web design
+- Use of APIs (In the “Planets” section, data is retrieved from the API at https://helldivers-2.github.io/api/#/),
+- A “mobile-first” approach to ensure proper display on mobile devices,
+- A simple login system,
+- Use of multimedia,
+- Data persistence across sessions.
