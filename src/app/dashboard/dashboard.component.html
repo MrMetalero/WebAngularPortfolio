@@ -1,0 +1,63 @@
+<h1 class="text-3xl font-bold text-center bg-amber-300 my-2 py-2  px-4">DASHBOARD COMPONENT</h1>
+
+<!-- Usuario logueado -->
+<p *ngIf="loggedInUser != null" class="text-center bg-black bg-opacity-10 py-1 text-gray-300 mb-6 px-4">
+    Usuario logueado: <span class="font-bold text-amber-500">{{ loggedInUser }}</span>
+</p>
+
+
+<div class="relative w-full max-w-4xl mx-auto h-64 bg-gray-900 rounded-lg shadow-lg mb-8 overflow-hidden">
+ 
+  <div class="absolute inset-0 flex transition-transform duration-500 ease-in-out " 
+       [ngStyle]="{ 'transform': 'translateX(-' + (currentSlide * 100) + '%)' }">
+     
+      <div class="min-w-full flex items-center justify-center bg-auto bg-center" style="background-image: url('assets/images/eminemthrow.jpg');">
+          <h2 class="text-2xl font-bold text-amber-500 bg-gray-900 bg-opacity-70 p-4 rounded-lg">FOR DEMOCRACY AND LIBERTY!</h2>
+      </div>
+   
+      <div class="min-w-full flex items-center justify-center bg-cover bg-center" style="background-image: url('assets/images/kickemote.webp');">
+          <h2 class="text-2xl font-bold text-amber-500 bg-gray-900 bg-opacity-70 p-4 rounded-lg">JOIN THE FIGHT TODAY!</h2>
+      </div>
+      
+      <div class="min-w-full flex items-center justify-center bg-cover bg-center" style="background-image: url('assets/images/helldiversTerminids.jpg');">
+          <h2 class="text-2xl font-bold text-amber-500 bg-gray-900 bg-opacity-70 p-4 rounded-lg">THE ONLY GOOD BUG IS A DEAD BUG!</h2>
+      </div>
+  </div>
+ 
+  <button 
+      class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-gray-900 bg-opacity-70 text-amber-500 p-2 rounded-full hover:bg-amber-500 hover:text-gray-900 transition duration-300"
+      (click)="prevSlide()"
+  >
+      &larr;
+  </button>
+  <button 
+      class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-gray-900 bg-opacity-70 text-amber-500 p-2 rounded-full hover:bg-amber-500 hover:text-gray-900 transition duration-300"
+      (click)="nextSlide()"
+  >
+      &rarr;
+  </button>
+</div>
+
+<div class="contenedor flex flex-wrap justify-center gap-6 px-4 mx-auto my-8">
+
+    <div class="item bg-gray-900 p-6 rounded-lg shadow-lg border border-amber-500 border-opacity-30 w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-18px)]">
+        <h3 class="text-xl font-bold text-amber-500 mb-2">Mission Status</h3>
+        <p class="text-gray-300">Current Objective: Liberate Planet X-12</p>
+        <p class="text-gray-300">Progress: <span class="text-amber-500">75%</span></p>
+    </div>
+    
+    <div class="item bg-gray-900 p-6 rounded-lg shadow-lg border border-amber-500 border-opacity-30 w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-18px)]">
+        <h3 class="text-xl font-bold text-amber-500 mb-2">Enemy Intel</h3>
+        <p class="text-gray-300">Bug Activity: <span class="text-red-500">High</span></p>
+        <p class="text-gray-300">Cyborg Sightings: <span class="text-amber-500">Low</span></p>
+    </div>
+    
+    <div class="item bg-gray-900 p-6 rounded-lg shadow-lg border border-amber-500 border-opacity-30 w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-18px)]">
+        <h3 class="text-xl font-bold text-amber-500 mb-2">Squad Readiness</h3>
+        <p class="text-gray-300">Squad Members: <span class="text-amber-500">4/4</span></p>
+    </div>
+
+    
+    
+    
+</div>
